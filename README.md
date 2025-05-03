@@ -17,7 +17,7 @@ Uma aplicação em HTML, CSS e JavaScript que calcula o **Índice de Massa Corpo
 
 ## 📸 Demonstração
 
-[Imagem da Calculadora] <!-- Quando estiver pronta -->
+![CalculadoraIMC](https://github.com/user-attachments/assets/f311c40c-1b72-46ad-9d05-0367390d4454)
 
 ## 🚀 Como Usar
 Abra o arquivo index.html no seu navegador
