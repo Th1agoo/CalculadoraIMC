@@ -1,0 +1,101 @@
+/* Reset e base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(to right, #c9b4fa, #c0d3fa);
+    color: #333;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container principal */
+.container {
+    max-width: 700px;
+    background: #f3f0ff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 9px 9px 16px #cbc6e0, -9px -9px 16px #ffffff;
+}
+
+/* Título */
+.titulo {
+    text-align: center;
+    font-size: 40px;
+    color: #5e2ca5;
+    margin-bottom: 20px;
+}
+
+/* Layout do formulário */
+.form-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Estilo dos campos */
+.formulario {
+    width: 100%;
+}
+
+.campo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.campo label {
+    width: 80px;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #5e2ca5;
+}
+
+.campo input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    background: #f3f0ff;
+    box-shadow: inset 3px 3px 6px #cbc6e0, inset -3px -3px 6px #ffffff;
+    color: #333;
+}
+
+/* Botão moderno */
+.botao {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 15px rgba(106, 17, 203, 0.4);
+}
+
+.botao:hover {
+    background: linear-gradient(to right, #7b1fa2, #1976d2);
+    transform: scale(1.02);
+    box-shadow: 0 6px 18px rgba(89, 0, 179, 0.5);
+}
+
+/* Resultado do IMC */
+.resultado {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #e6e0ff;
+    color: #5e2ca5;
+    border-radius: 8px;
+    font-weight: bold;
+    display: none;
+}
