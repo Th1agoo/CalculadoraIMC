@@ -12,7 +12,7 @@ O objetivo é permitir que o usuário insira seu nome, peso e altura, e receba d
 - ✅ Validação de campos obrigatórios
 - ✅ Classificação de acordo com a faixa de IMC (ex: Abaixo do peso, Peso normal, Sobrepeso, etc.)
 - ✅ Layout responsivo
-- ✅ Mensagens de feedback para o usuário
+- ✅ Mensagens de feedback para o usuário com dicas de saúde baseadas na classificação do IMC
 - ✅ Interface moderna e limpa
 - ✅ Código limpo, comentado e bem estruturado
 
