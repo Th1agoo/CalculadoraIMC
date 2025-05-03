@@ -21,7 +21,7 @@ body {
     background: #f3f0ff;
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 9px 9px 16px #cbc6e0, -9px -9px 16px #ffffff;
+    box-shadow: 9px 9px 16px #391da7;
 }
 
 /* Título */
@@ -35,13 +35,20 @@ body {
 /* Layout do formulário */
 .form-layout {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    gap: 30px;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.imagem-lateral {
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
 }
 
 /* Estilo dos campos */
 .formulario {
-    width: 100%;
+    flex: 1;
 }
 
 .campo {
@@ -79,23 +86,155 @@ body {
     border-radius: 8px;
     font-weight: bold;
     cursor: pointer;
-    transition: 0.3s ease;
+    transition: transform 0.2s ease, background 0.3s ease;
     box-shadow: 0 4px 15px rgba(106, 17, 203, 0.4);
 }
 
 .botao:hover {
     background: linear-gradient(to right, #7b1fa2, #1976d2);
-    transform: scale(1.02);
+    transform: scale(1.05);
     box-shadow: 0 6px 18px rgba(89, 0, 179, 0.5);
+}
+
+/* Estilo para o container dos botões */
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+/* Estilo para o botão de limpar */
+.botao.limpar {
+    background: linear-gradient(to right, #ff5f6d, #ffc371);
+    box-shadow: 0 4px 15px rgba(255, 95, 109, 0.4);
+}
+
+.botao.limpar:hover {
+    background: linear-gradient(to right, #ff4e50, #f9d423);
+    box-shadow: 0 6px 18px rgba(255, 70, 85, 0.5);
 }
 
 /* Resultado do IMC */
 .resultado {
+    font-size: 20px;
     margin-top: 20px;
     padding: 20px;
-    background-color: #e6e0ff;
-    color: #5e2ca5;
+    background-color: #b6b0f1;
+    /* lilás clarinho */
+    color: #1a1a1a;
+    /* azul escuro quase preto */
     border-radius: 8px;
     font-weight: bold;
     display: none;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.3s ease-in-out;
+}
+
+.resultado.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .form-layout {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .imagem-lateral {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .campo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .campo label {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .campo input {
+        width: 100%;
+    }
+
+    .botao {
+        width: 100%;
+    }
+
+    .titulo {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 24px;
+    }
+
+    .form-layout {
+        flex-direction: column;
+    }
+
+    .imagem-lateral {
+        display: none;
+        /* Ocultar imagem em telas muito pequenas */
+    }
+}
+
+/* ...existing code... */
+
+/* Adicione ao final do arquivo */
+.dicas-saude {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+}
+
+.dicas-saude h3 {
+    color: #5e2ca5;
+    margin-bottom: 10px;
+}
+
+.dicas-saude ul {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+.dicas-saude li {
+    margin-bottom: 5px;
+}
+
+.historico {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+}
+
+.historico h3 {
+    color: #5e2ca5;
+    margin-bottom: 10px;
+}
+
+.historico-item {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.historico-item:last-child {
+    border-bottom: none;
+}
+
+.historico-item small {
+    color: #666;
 }
