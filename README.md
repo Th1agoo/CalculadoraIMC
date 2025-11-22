@@ -1,14 +1,22 @@
 # 🧮 Calculadora de IMC
 
-Uma aplicação em HTML, CSS e JavaScript que calcula o **Índice de Massa Corporal (IMC)** com base no peso e altura informados pelo usuário.
+Este é um projeto funcional de uma **Calculadora de IMC (Índice de Massa Corporal)**, desenvolvida com **HTML, CSS e JavaScript**, como parte dos meus estudos de front-end.
 
-## 💡 Funcionalidades
+O objetivo é permitir que o usuário insira seu nome, peso e altura, e receba de forma clara seu IMC calculado com base nas classificações da Organização Mundial da Saúde (OMS).
 
-- Entrada de **peso** (kg) e **altura** (cm)
-- Cálculo automático do IMC
-- Exibição da **classificação** (ex: Abaixo do peso, Peso normal, Sobrepeso, etc.)
-- Interface responsiva
+---
 
+## 🔍 Funcionalidades
+
+- ✅ Cálculo automático do IMC
+- ✅ Validação de campos obrigatórios
+- ✅ Classificação de acordo com a faixa de IMC (ex: Abaixo do peso, Peso normal, Sobrepeso, etc.)
+- ✅ Layout responsivo
+- ✅ Mensagens de feedback para o usuário com dicas de saúde baseadas na classificação do IMC
+- ✅ Interface moderna e limpa
+- ✅ Código limpo, comentado e bem estruturado
+
+---
 ## 🖥️ Tecnologias Utilizadas
 
 - HTML5
@@ -17,7 +25,9 @@ Uma aplicação em HTML, CSS e JavaScript que calcula o **Índice de Massa Corpo
 
 ## 📸 Demonstração
 
-[Imagem da Calculadora] <!-- Quando estiver pronta -->
+![Captura de tela 2025-05-03 182801](https://github.com/user-attachments/assets/26df316e-f06a-411f-b627-d39dee2abdbb)![Captura de tela 2025-05-03 182816](https://github.com/user-attachments/assets/8277356b-11cf-4dd8-a1ad-59cefe6c7bdc)
+
+
 
 ## 🚀 Como Usar
 Abra o arquivo index.html no seu navegador
