@@ -1,0 +1,6 @@
+steps:
+  # Usar a ferramenta gsutil para sincronizar o repositório com o bucket
+  - name: 'gcr.io/cloud-builders/gsutil'
+    args: ['-m', 'rsync', '-r', '-c', '-d', '.', 'gs://deploy-video']
+options:
+  logging: CLOUD_LOGGING_ONLY
